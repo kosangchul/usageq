@@ -1,4 +1,4 @@
-package com.telco.common.entity;
+package com.telco.management.entity;
 
 import lombok.AccessLevel;
 import lombok.Builder;

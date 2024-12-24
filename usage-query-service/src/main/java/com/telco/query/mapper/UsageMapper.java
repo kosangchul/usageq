@@ -2,7 +2,7 @@ package com.telco.query.mapper;
 
 import com.telco.common.dto.UsageDTO;
 import com.telco.common.dto.UsageDetail;
-import com.telco.common.entity.*;
+import com.telco.query.entity.*;
 import org.springframework.stereotype.Component;
 
 @Component

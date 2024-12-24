@@ -2,7 +2,7 @@ package com.telco.management.mapper;
 
 import com.telco.common.dto.UsageDTO;
 import com.telco.common.dto.UsageDetail;
-import com.telco.common.entity.*;
+import com.telco.management.entity.*;
 import org.springframework.stereotype.Component;
 
 @Component

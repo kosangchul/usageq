@@ -1,7 +1,8 @@
+// File: usage-query-service/src/main/java/com/telco/query/service/ICacheService.java
 package com.telco.query.service;
 
-import java.util.Optional;
 import com.telco.common.dto.CacheStatus;
+import java.util.Optional;
 
 public interface ICacheService<T> {
     Optional<T> get(String key);

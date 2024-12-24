@@ -1,3 +1,4 @@
+// File: usage-management-service/src/main/java/com/telco/management/config/RedisConfig.java
 package com.telco.management.config;
 
 import org.springframework.cache.annotation.EnableCaching;
@@ -17,12 +18,14 @@ public class RedisConfig {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
         template.setConnectionFactory(connectionFactory);
 
+        // key serializer
         template.setKeySerializer(new StringRedisSerializer());
         template.setHashKeySerializer(new StringRedisSerializer());
-        template.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
-        template.setValueSerializer(new GenericJackson2JsonRedisSerializer());
 
-        template.setEnableTransactionSupport(true);
+        // value serializer
+        template.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+        template.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
+
         template.afterPropertiesSet();
 
         return template;

@@ -1,4 +1,4 @@
-package com.telco.common.entity;
+package com.telco.query.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
