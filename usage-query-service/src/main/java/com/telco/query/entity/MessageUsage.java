@@ -1,5 +1,6 @@
-package com.telco.common.entity;
+package com.telco.query.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -10,8 +11,13 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class MessageUsage {
+    @Column(name = "message_total_usage")
     private long totalUsage;
+
+    @Column(name = "message_free_usage")
     private long freeUsage;
+
+    @Column(name = "message_excess_usage")
     private long excessUsage;
 
     @Builder
